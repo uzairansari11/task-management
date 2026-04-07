@@ -20,7 +20,7 @@ class TaskWriteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Task
         fields = ['id', 'title', 'description', 'status',
-                  'priority', 'due_date', 'assigned_to','created_by']
+                  'priority', 'due_date', 'assigned_to']
 
 
 class TaskReadSerializer(serializers.ModelSerializer):
@@ -31,3 +31,5 @@ class TaskReadSerializer(serializers.ModelSerializer):
         model = Task
         fields = ['id', 'title', 'description', 'status', 'priority',
                   'due_date', 'created_by', 'assigned_to', 'created_at', 'updated_at']
+
+
